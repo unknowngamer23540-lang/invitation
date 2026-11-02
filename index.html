@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f1dd">
+  <meta name="description" content="A celebration of love — Angel & Mukul. With love from our families, you're invited to celebrate with us.">
+  <title>Angel & Mukul — A Celebration of Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root { --cream:#faf5e8; --paper:#fffaf0; --wine:#481d30; --wine-deep:#301323; --wine-light:#64293e; --gold:#ae8248; --gold-light:#dfbc79; --rose:#c36d82; --ink:#5e3540; --sage:#788c68; --shadow:0 26px 70px rgba(59,27,35,.15); }
+    *, *::before, *::after {box-sizing:border-box}
+    html {scroll-behavior:smooth}
+    body {margin:0; color:var(--ink); background:var(--cream);font-family:"DM Sans",sans-serif;-webkit-font-smoothing:antialiased}
+    body::selection {background:#ead0cc;color:var(--wine)}
+    a {color:inherit;text-decoration:none}
+    button {font:inherit;cursor:pointer}
+    button:focus-visible,a:focus-visible {outline:3px solid #bf7c8b;outline-offset:5px}
+    .screen-reader-only {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .serif {font-family:"Playfair Display",Georgia,serif}
+    .script {font-family:"Great Vibes","Brush Script MT",cursive;font-weight:400}
+    .eyebrow {font-size:10px;letter-spacing:.34em;text-transform:uppercase;font-weight:700}
+    .section-title {font-family:"Great Vibes","Brush Script MT",cursive;font-size:clamp(52px,6.3vw,82px);font-weight:400;line-height:1.04;margin:12px 0 16px}
+    .section-copy {font:400 15px/1.9 "DM Sans",sans-serif;color:#88646c;max-width:600px;margin:0 auto}
+    .container {width:min(1120px,calc(100% - 42px));margin:0 auto}
+    .flower-divider {display:flex;align-items:center;justify-content:center;gap:15px;color:var(--gold);margin:20px auto}
+    .flower-divider::before,.flower-divider::after {content:"";width:74px;max-width:18vw;height:1px;background:linear-gradient(to right,transparent,#c5a36b)}
+    .flower-divider::after {transform:rotate(180deg)}
+    .flower-divider svg {height:20px;width:20px;fill:none;stroke:currentColor;stroke-width:1.25}
+    /* Header */
+    .header {position:absolute;inset:0 0 auto;z-index:30;display:flex;align-items:center;justify-content:space-between;padding:25px clamp(24px,5vw,85px);gap:20px}
+    .brand {font-family:"Playfair Display",serif;color:var(--wine);letter-spacing:-.03em;font-size:25px;line-height:1;white-space:nowrap}
+    .brand em {font-family:"Great Vibes",cursive;font-weight:400;font-style:normal;font-size:33px;padding:0 5px;color:var(--gold)}
+    .nav {display:flex;align-items:center;gap:31px}
+    .nav a {font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#744956;transition:color .2s}
+    .nav a:hover {color:var(--rose)}
+    .nav .nav-pill {padding:12px 18px;border:1px solid rgba(111,57,62,.3);border-radius:40px}
+    /* Hero */
+    .hero {min-height:850px;height:auto;isolation:isolate;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 22%,#fffdf5 0%,#f9f4e6 58%,#e9ebcf 110%)}
+    .hero::before {content:"";position:absolute;inset:0;z-index:-1;opacity:.26;background-image:url('data:image/svg+xml,%3Csvg viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.82" numOctaves="3" stitchTiles="stitch"/%3E%3C/filter%3E%3Crect width="150" height="150" filter="url(%23n)" opacity="0.14"/%3E%3C/svg%3E')}
+    .hero::after {content:"";position:absolute;left:0;right:0;bottom:-1px;height:25px;background:linear-gradient(transparent,var(--cream));z-index:4}
+    .hero-inner {position:relative;z-index:6;max-width:910px;margin:0 auto;text-align:center;padding:118px 24px 190px}
+    .crest {width:81px;height:85px;color:var(--gold);margin:0 auto 18px;opacity:.92}
+    .small-intro {font-family:"Playfair Display",serif;font-style:italic;color:#8b6960;font-size:clamp(13px,1.6vw,16px);margin:8px 0 15px}
+    .hero-quiet {font-size:10px;letter-spacing:.25em;line-height:1.8;color:#997e68;text-transform:uppercase;margin:0 auto}
+    .hero-names {color:var(--wine);margin:20px 0 4px;display:flex;flex-direction:column;align-items:center;gap:0;font-size:clamp(78px,11vw,144px);line-height:.94;text-shadow:0 3px 20px #f5e7d3}
+    .hero-names .name {display:block;min-height:1em}
+    .hero-names .and {font:400 clamp(24px,3.8vw,40px)/1.05 "Great Vibes",cursive;opacity:.88;color:var(--gold);margin:0;transform:rotate(-6deg)}
+    .hero-subtitle {font-family:"Playfair Display",serif;font-style:italic;font-size:clamp(16px,2vw,22px);color:#86636a;margin:8px 0 0}
+    .hero-date {display:inline-flex;gap:15px;align-items:center;justify-content:center;border-block:1px solid rgba(180,139,77,.4);padding:14px 20px;margin-top:24px;color:#6d4c40;font-size:12px;text-transform:uppercase;letter-spacing:.18em;line-height:1.5}
+    .hero-date b {font-weight:500;color:var(--gold);font-size:15px}
+    .hero-scroll {display:flex;width:max-content;align-items:center;gap:8px;margin:22px auto 0;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.25em;color:#8e756e}
+    .hero-scroll svg {width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;animation:nudge 2s ease-in-out infinite}
+    .ornament {position:absolute;z-index:3;pointer-events:none;width:min(470px,38vw);height:auto;top:-8px;opacity:.98;filter:drop-shadow(0 8px 12px rgba(116,69,51,.08))}
+    .ornament.left {left:-35px}
+    .ornament.right {right:-35px;transform:scaleX(-1)}
+    .side-leaves {position:absolute;z-index:2;width:260px;opacity:.7;top:175px;right:-90px;transform:rotate(-16deg);pointer-events:none}
+    .mobile-stairs {display:none}
+    .garden {position:absolute;bottom:0;left:0;width:100%;height:clamp(270px,31vw,440px);z-index:3;pointer-events:none;display:block}
+    .petal-layer {position:absolute;inset:0;pointer-events:none;z-index:12;overflow:hidden}
+    .petal {position:absolute;top:-35px;width:10px;height:15px;border-radius:90% 0 75% 35%;background:linear-gradient(135deg,#e3a1a5,#bd4e69);opacity:0;filter:drop-shadow(0 2px 2px #a04b4d25);animation:petal-fall var(--duration) linear var(--delay) infinite;transform-origin:center}
+    @keyframes petal-fall {0%{opacity:0;transform:translate3d(0,-40px,0) rotate(5deg)}8%{opacity:.78}86%{opacity:.75}100%{opacity:0;transform:translate3d(var(--drift),115vh,0) rotate(var(--spin))}}
+    @keyframes nudge {0%,100%{transform:translateY(-2px)}50%{transform:translateY(4px)}}
+    /* Intro / countdown */
+    .save-section {position:relative;padding:95px 0 94px;background:var(--cream);text-align:center;overflow:hidden}
+    .save-section::before,.save-section::after {content:"❦";position:absolute;font-size:195px;color:rgba(163,126,87,.08);line-height:1;top:-30px}
+    .save-section::before {left:-20px;transform:rotate(-24deg)}
+    .save-section::after {right:-20px;transform:rotate(24deg)}
+    .save-section .eyebrow {color:#b58a5b}
+    .save-section .section-title {color:var(--wine)}
+    .gold-label {display:inline-block;margin:28px 0 4px;border:1px solid #d9c392;background:#fffbf1;padding:11px 25px;box-shadow:0 8px 35px #b5a17014;border-radius:4px;font-family:"Playfair Display",serif;font-size:17px;color:#775440}
+    .countdown {display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,35px);margin:28px auto 19px}
+    .count-unit {min-width:70px;position:relative}
+    .count-number {display:block;font:400 clamp(37px,6vw,67px)/1.05 "Playfair Display",serif;color:var(--wine);font-variant-numeric:tabular-nums}
+    .count-label {font-size:9px;text-transform:uppercase;letter-spacing:.24em;color:#ad8c7f;display:block;margin-top:10px}
+    .count-sep {font:400 33px/1 "Playfair Display",serif;color:#cfb391;transform:translateY(-10px)}
+    .muted-note {color:#9b7c7c;font-size:12px;line-height:1.6;margin-top:19px}
+    .outline-button,.solid-button {display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 23px;border-radius:32px;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;transition:transform .25s,box-shadow .25s,background .25s}
+    .outline-button {background:transparent;border:1px solid #b99364;color:#8a5f47}
+    .outline-button:hover,.solid-button:hover {transform:translateY(-2px);box-shadow:0 10px 20px #321a2627}
+    .outline-button svg,.solid-button svg {width:16px;height:16px;stroke:currentColor;stroke-width:1.7;fill:none}
+    .solid-button {border:1px solid #ac7548;background:linear-gradient(120deg,#ca9870,#ae7955);color:#fffdf7}
+    /* Events */
+    .events-section {padding:105px 0 118px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0%,#673349 0%,var(--wine) 34%,var(--wine-deep) 100%);color:#fff7ea}
+    .events-section::before {content:"";position:absolute;inset:0;pointer-events:none;opacity:.13;background:repeating-linear-gradient(135deg,transparent,transparent 34px,#cfaf9338 35px,transparent 36px)}
+    .events-section::after {content:"✧";font-size:180px;color:#b9a17509;position:absolute;right:-30px;top:22px}
+    .events-section .section-heading {text-align:center;position:relative;z-index:2}
+    .events-section .eyebrow {color:#e1bd7c}
+    .events-section .section-title {color:#fff0da}
+    .events-section .section-copy {color:#d3b8b7}
+    .events-section .flower-divider {color:#e2bd83}
+    .events-grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:55px;position:relative;z-index:2}
+    .event-card {min-width:0;border:1px solid #d6ad815c;border-radius:12px;overflow:hidden;background:#f6eedc;box-shadow:0 22px 48px #180e1845;transition:transform .3s,box-shadow .3s}
+    .event-card:hover {transform:translateY(-6px);box-shadow:0 30px 70px #13091268}
+    .event-image {height:244px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;color:#fff6e6}
+    .event-image .sun {position:absolute;width:150px;height:150px;border-radius:50%;filter:blur(1px);opacity:.8;top:8px;right:14px}
+    .event-image.haldi {background:radial-gradient(ellipse at 20% 20%,#eccd7e,#c69251 50%,#845230 100%)}
+    .event-image.haldi .sun {background:#fff0b287}
+    .event-image.sangeet {background:radial-gradient(ellipse at 30% 5%,#56617f,#312842 57%,#22162d)}
+    .event-image.sangeet .sun {background:#ffe5aa4a}
+    .event-image.wedding {background:radial-gradient(ellipse at 24% 13%,#b87179,#7c3d53 50%,#3c2032)}
+    .event-image.wedding .sun {background:#efd4ad36}
+    .event-art {width:100%;height:100%;position:absolute;inset:0;pointer-events:none}
+    .event-image::after {content:"";position:absolute;inset:0;background:linear-gradient(to bottom,transparent 35%,rgba(21,10,18,.45));pointer-events:none}
+    .event-visual-name {position:absolute;bottom:24px;left:0;right:0;text-align:center;z-index:2;font:400 51px/1.05 "Great Vibes",cursive;text-shadow:0 3px 14px #34142180}
+    .event-content {padding:27px 26px 29px;min-height:235px;text-align:center;color:var(--wine)}
+    .event-kicker {font-size:9px;text-transform:uppercase;letter-spacing:.27em;font-weight:700;color:#b3844e}
+    .event-content h3 {font:500 25px/1.2 "Playfair Display",serif;margin:10px 0 12px}
+    .event-content p {font-size:13px;line-height:1.8;margin:0;color:#7e6571}
+    .event-content .event-status {display:inline-flex;align-items:center;gap:6px;margin-top:17px;font-weight:700;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#a27550}
+    .event-status::before {content:"";height:4px;width:4px;border-radius:50%;background:currentColor}
+    /* Family */
+    .family-section {padding:102px 0 110px;background:#fbf7ec;position:relative;text-align:center;overflow:hidden}
+    .family-section::before {content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,#fffefa 0%,transparent 70%);pointer-events:none}
+    .family-section .container {position:relative;z-index:1}
+    .family-grid {display:grid;grid-template-columns:1fr 70px 1fr;gap:24px;align-items:center;max-width:930px;margin:46px auto 0}
+    .family-panel {padding:34px 18px;border-top:1px solid #dcc5a0;border-bottom:1px solid #dcc5a0}
+    .family-panel .eyebrow {color:#b48c52}
+    .family-panel h3 {font:400 45px/1.2 "Great Vibes",cursive;color:var(--wine);margin:14px 0 15px}
+    .family-panel p {font:400 14px/2 "Playfair Display",serif;color:#805c5b;margin:0}
+    .family-heart {font-family:"Playfair Display",serif;color:#bd8b5c;font-size:45px;font-style:italic;font-weight:400}
+    .family-quote {font-family:"Playfair Display",serif;font-size:clamp(19px,2.3vw,26px);font-style:italic;color:#8c6061;margin:50px auto 0;max-width:710px;line-height:1.6}
+    /* Gallery */
+    .gallery-section {padding:106px 0;background:linear-gradient(180deg,#f3e8de,#fdf8eb);text-align:center}
+    .gallery-section .section-title {color:var(--wine)}
+    .gallery-grid {display:grid;grid-template-columns:1fr 1.22fr 1fr;gap:18px;align-items:center;margin-top:52px}
+    .gallery-tile {height:340px;border:8px solid #fffaf2;border-radius:10px;position:relative;overflow:hidden;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;isolation:isolate}
+    .gallery-tile.tall {height:400px}
+    .gallery-tile::before {content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(ellipse at 30% 10%,#ede0cc,#c79a8e 62%,#76465d)}
+    .gallery-tile:nth-child(2)::before {background:radial-gradient(ellipse at 50% 10%,#ddc29e,#9a796c 52%,#48293a)}
+    .gallery-tile:nth-child(3)::before {background:radial-gradient(ellipse at 10% 15%,#e7c9cc,#bb8393 50%,#7c4c56)}
+    .gallery-tile::after {content:"";position:absolute;inset:16px;border:1px solid #fff8e5a8;border-radius:3px;pointer-events:none}
+    .gallery-shape {position:absolute;z-index:-1;width:80%;height:67%;top:13%;background:linear-gradient(155deg,#fff6e58c,#fff6e50f);border:1px solid #fff6e58c;border-radius:45% 45% 2% 2%;box-shadow:inset 0 0 50px #fff9e036}
+    .gallery-tile .gallery-icon {width:36px;height:36px;stroke:#fff6e4;fill:none;stroke-width:1.2}
+    .gallery-tile span {color:#fffaf1;font:400 30px/1.2 "Great Vibes",cursive;text-shadow:0 2px 8px #4127339c;max-width:180px}
+    .gallery-footnote {font-size:12px;color:#987f75;letter-spacing:.01em;margin:28px auto 0;max-width:500px}
+    /* Venue */
+    .venue-section {padding:105px 0 115px;text-align:center;background:var(--cream);position:relative}
+    .venue-section .section-title {color:var(--wine)}
+    .venue-name {font:500 clamp(22px,3vw,30px)/1.5 "Playfair Display",serif;margin:26px auto 8px;color:#5d3543}
+    .venue-address {font-size:14px;line-height:1.85;color:#97746c;margin:0 auto 30px}
+    .map-frame {max-width:960px;margin:36px auto 31px;border:9px solid #fffdf7;border-radius:11px;overflow:hidden;box-shadow:0 22px 68px #5f39402a;height:365px;background:#e6e6d9}
+    .map-frame iframe {width:100%;height:100%;border:0;display:block}
+    .button-row {display:flex;gap:13px;align-items:center;justify-content:center;flex-wrap:wrap}
+    /* Outro */
+    .outro {padding:92px 20px 35px;text-align:center;color:#fff5eb;background:radial-gradient(ellipse at 50% -25%,#704159,transparent 65%),var(--wine-deep);position:relative;overflow:hidden}
+    .outro:before,.outro:after {content:"✦";position:absolute;color:#bd977353;font-size:130px;top:80px}
+    .outro::before {left:-42px}.outro::after {right:-42px}
+    .outro .eyebrow {color:#ddb480}
+    .outro .section-title {color:#fff6e8;margin:18px 0 22px}
+    .outro p {max-width:600px;font:400 16px/1.9 "Playfair Display",serif;color:#d6bdc5;margin:0 auto 20px}
+    .outro .final-names {font:400 53px/1.2 "Great Vibes",cursive;color:#f0d1a3;margin:33px 0 50px}
+    .footer {border-top:1px solid #c0968a33;padding:24px 0;color:#bb9da3;font-size:11px;letter-spacing:.06em}
+    .footer span {color:#ead0b3}
+    .reveal {opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+    .reveal.visible {opacity:1;transform:none}
+    .toast {position:fixed;bottom:24px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:80;background:#301323;color:#fff;padding:13px 21px;border:1px solid #d3aa7780;border-radius:40px;font-size:12px;box-shadow:0 14px 32px #0003;transition:.3s}
+    .toast.show {opacity:1;transform:translate(-50%,0)}
+    @media (max-width:800px) {
+      .nav {gap:15px}.nav a:not(.nav-pill){display:none}
+      .events-grid {grid-template-columns:1fr 1fr}.event-card:last-child {grid-column:1/-1;max-width:440px;justify-self:center;width:100%}
+      .hero {min-height:820px}.hero-inner {padding-top:143px}
+      .ornament {width:49vw}.ornament.left{left:-50px}.ornament.right{right:-50px}
+      .garden {height:325px}
+    }
+    @media (max-width:600px) {
+      .header {padding:22px 20px}.brand {font-size:22px}.brand em{font-size:27px}
+      .nav .nav-pill {font-size:9px;padding:10px 13px}
+      .hero {min-height:850px}
+      .hero-inner {padding:143px 12px 190px}
+      .crest {height:69px;width:68px;margin-bottom:17px}
+      .hero-quiet {max-width:340px;font-size:9px;letter-spacing:.19em;line-height:1.9}
+      .hero-names {font-size:clamp(79px,19vw,112px);margin-top:20px}
+      .hero-names .and {font-size:35px}
+      .hero-subtitle {font-size:16px}
+      .hero-date {margin-top:20px;padding:12px 9px;gap:8px;letter-spacing:.08em;font-size:9px}
+      .hero-date b {font-size:12px}
+      .hero-scroll {margin-top:15px}
+      .garden {height:250px;bottom:-2px;width:160%;left:-30%}
+      .mobile-stairs {display:block;position:absolute;bottom:0;left:0;right:0;height:205px;z-index:4;pointer-events:none}
+      .mobile-stairs::before,.mobile-stairs::after {content:"";position:absolute;bottom:-3px;width:35%;height:96%;background:repeating-linear-gradient(0deg,#e8e5d4 0px,#efeadd 7px,#9e9b89 9px,#fff7e8 12px);box-shadow:inset 0 0 0 2px #a5aa94;opacity:.94}
+      .mobile-stairs::before {left:-1px;clip-path:polygon(0 12%,100% 100%,0 100%)}
+      .mobile-stairs::after {right:-1px;clip-path:polygon(100% 12%,0 100%,100% 100%)}
+      .mobile-stairs span {position:absolute;bottom:15px;height:3px;width:44%;background:#f8f1db;box-shadow:0 4px 0 #9a9984;z-index:2}
+      .mobile-stairs span:first-child {left:-8%;transform:rotate(40deg);transform-origin:left bottom}
+      .mobile-stairs span:last-child {right:-8%;transform:rotate(-40deg);transform-origin:right bottom}
+      .ornament {width:260px;top:4px;opacity:.8}.ornament.left{left:-116px}.ornament.right{right:-116px}
+      .side-leaves {display:none}
+      .save-section,.family-section,.gallery-section,.venue-section {padding:78px 0}
+      .events-section {padding:78px 0 86px}
+      .section-title {font-size:58px}
+      .section-copy {font-size:14px;line-height:1.8}
+      .countdown {gap:8px}.count-unit {min-width:55px}.count-number {font-size:40px}.count-label{font-size:8px;letter-spacing:.14em}.count-sep{font-size:22px}
+      .events-grid {grid-template-columns:1fr;gap:22px;margin-top:42px;max-width:410px;margin-inline:auto}
+      .event-card:last-child {grid-column:auto}
+      .event-image {height:230px}.event-content {min-height:unset;padding:24px}
+      .family-grid {grid-template-columns:1fr;gap:2px;margin-top:28px}
+      .family-panel {padding:27px 12px}.family-heart {font-size:31px;padding:7px}
+      .family-quote {font-size:18px;margin-top:35px}
+      .gallery-grid {grid-template-columns:1fr 1fr;gap:12px;margin-top:33px}
+      .gallery-tile {height:240px;border-width:5px}.gallery-tile.tall {height:240px}.gallery-tile:nth-child(3){grid-column:1/-1;width:calc(50% - 6px);justify-self:center}
+      .gallery-tile span {font-size:23px;padding:0 8px}.gallery-tile .gallery-icon{width:28px;height:28px}
+      .map-frame {height:290px;margin-top:23px;border-width:5px}
+      .outro {padding-top:76px}.outro .section-title {font-size:62px}.outro .final-names {font-size:47px}
+    }
+    @media (max-width:350px) {
+      .hero-names {font-size:72px}.hero {min-height:820px}.hero-inner{padding-top:130px}
+      .hero-date {font-size:8px}.count-unit{min-width:48px}.count-number{font-size:35px}
+    }
+    @media (prefers-reduced-motion:reduce) {
+      *,*::before,*::after {animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}
+      .petal-layer {display:none}.reveal {opacity:1;transform:none}
+    }
+  </style>
+</head>
+<body>
+<!-- Site content lives in this one file, making it simple to publish on GitHub Pages. -->
+<!-- Decorative reusable SVGs -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" aria-hidden="true" style="position:absolute;overflow:hidden">
+  <defs>
+    <radialGradient id="rose-fill"><stop stop-color="#fff1dc"/><stop offset=".32" stop-color="#d79ca3"/><stop offset="1" stop-color="#b35a76"/></radialGradient>
+    <radialGradient id="peony-fill"><stop stop-color="#fff6e0"/><stop offset=".5" stop-color="#f2c3b6"/><stop offset="1" stop-color="#d48b99"/></radialGradient>
+    <linearGradient id="leaf-fill" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#98ab79"/><stop offset="1" stop-color="#506f56"/></linearGradient>
+    <g id="flower-rose">
+      <g fill="url(#rose-fill)" stroke="#a45b6f" stroke-opacity=".3" stroke-width="1.3">
+        <ellipse cx="0" cy="-20" rx="15" ry="25"/><ellipse cx="19" cy="-9" rx="16" ry="23" transform="rotate(60 19 -9)"/>
+        <ellipse cx="19" cy="15" rx="16" ry="23" transform="rotate(120 19 15)"/><ellipse cx="-15" cy="17" rx="16" ry="22" transform="rotate(-120 -15 17)"/>
+        <ellipse cx="-20" cy="-6" rx="16" ry="23" transform="rotate(-55 -20 -6)"/>
+        <circle cx="0" cy="0" r="18" fill="#e7abb0"/><path d="M-8 -4 Q8 -15 8 0 Q6 11 -6 8 Q-13 1 -4 -3" fill="none" stroke="#b96979" stroke-width="2.5"/>
+      </g>
+    </g>
+    <g id="flower-small"><g fill="url(#peony-fill)"><ellipse cy="-10" rx="8" ry="13"/><ellipse cy="10" rx="8" ry="13"/><ellipse cx="-10" rx="13" ry="8"/><ellipse cx="10" rx="13" ry="8"/><ellipse transform="rotate(45)" cy="-9" rx="7" ry="11"/><ellipse transform="rotate(-45)" cy="-9" rx="7" ry="11"/></g><circle r="5" fill="#e9c17d"/></g>
+    <g id="foliage-leaf"><path d="M0 0C4 -22 33 -37 52 -35C45 -15 32 2 0 0Z" fill="url(#leaf-fill)"/><path d="M2 -1Q27 -17 47 -31" fill="none" stroke="#d1d5ad" stroke-width="1.3"/></g>
+    <g id="tiny-flower"><circle r="8" fill="#c77887"/><circle cx="-5" cy="-4" r="5" fill="#eab3b1"/><circle cx="4" cy="-5" r="5" fill="#e4a0aa"/><circle cy="2" r="3" fill="#ebca84"/></g>
+    <g id="flourish"><path d="M0 20 C60 30 70 0 40 -2 C19 -4 22 26 38 24 C53 23 51 7 48 2 M64 16 C90 20 120 11 145 -6" fill="none" stroke="#8f9b6c" stroke-width="3" stroke-linecap="round"/><use href="#foliage-leaf" transform="translate(60 16) scale(.48) rotate(-35)"/><use href="#foliage-leaf" transform="translate(108 7) scale(.42) rotate(-73)"/></g>
+  </defs>
+</svg>
+
+<header class="header" id="top">
+  <a class="brand" href="#top" aria-label="Angel and Mukul, back to top">A<em>&</em>M</a>
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#celebrations">The celebrations</a>
+    <a href="#families">Our families</a>
+    <a href="#venue">The venue</a>
+    <a class="nav-pill" href="#celebrations">Explore invitation</a>
+  </nav>
+</header>
+
+<section class="hero" aria-labelledby="couple-names">
+  <div class="petal-layer" id="petals" aria-hidden="true"></div>
+  <!-- Corner florals -->
+  <svg class="ornament left" viewBox="0 0 430 370" aria-hidden="true">
+    <path d="M-20 -10C64 72 119 98 230 62 M33 -10C103 61 104 140 182 162 M-10 99C55 117 96 174 89 253" fill="none" stroke="#899a72" stroke-width="6" opacity=".65"/>
+    <use href="#foliage-leaf" transform="translate(51 32) rotate(-75) scale(1.05)"/><use href="#foliage-leaf" transform="translate(105 70) rotate(15) scale(1.15)"/>
+    <use href="#foliage-leaf" transform="translate(139 74) rotate(-85) scale(.95)"/><use href="#foliage-leaf" transform="translate(55 142) rotate(25) scale(1)"/>
+    <use href="#foliage-leaf" transform="translate(83 171) rotate(-75) scale(.9)"/><use href="#foliage-leaf" transform="translate(116 126) rotate(-10) scale(.65)"/>
+    <use href="#flower-rose" transform="translate(43 36) scale(1.1)"/><use href="#flower-rose" transform="translate(134 40) scale(.73)"/>
+    <use href="#flower-rose" transform="translate(29 118) scale(.86)"/><use href="#flower-small" transform="translate(184 62) scale(.8)"/>
+    <use href="#flower-small" transform="translate(80 199) scale(.74)"/><use href="#flower-small" transform="translate(227 55) scale(.52)"/>
+    <use href="#flourish" transform="translate(4 207) rotate(-28) scale(.82)"/>
+    <use href="#tiny-flower" transform="translate(219 88) scale(.45)"/>
+    <use href="#tiny-flower" transform="translate(161 156) scale(.5)"/>
+  </svg>
+  <svg class="ornament right" viewBox="0 0 430 370" aria-hidden="true">
+    <path d="M-20 -10C64 72 119 98 230 62 M33 -10C103 61 104 140 182 162 M-10 99C55 117 96 174 89 253" fill="none" stroke="#899a72" stroke-width="6" opacity=".65"/>
+    <use href="#foliage-leaf" transform="translate(51 32) rotate(-75) scale(1.05)"/><use href="#foliage-leaf" transform="translate(105 70) rotate(15) scale(1.15)"/>
+    <use href="#foliage-leaf" transform="translate(139 74) rotate(-85) scale(.95)"/><use href="#foliage-leaf" transform="translate(55 142) rotate(25) scale(1)"/>
+    <use href="#foliage-leaf" transform="translate(83 171) rotate(-75) scale(.9)"/><use href="#foliage-leaf" transform="translate(116 126) rotate(-10) scale(.65)"/>
+    <use href="#flower-rose" transform="translate(43 36) scale(1.1)"/><use href="#flower-rose" transform="translate(134 40) scale(.73)"/>
+    <use href="#flower-rose" transform="translate(29 118) scale(.86)"/><use href="#flower-small" transform="translate(184 62) scale(.8)"/>
+    <use href="#flower-small" transform="translate(80 199) scale(.74)"/><use href="#flower-small" transform="translate(227 55) scale(.52)"/>
+    <use href="#flourish" transform="translate(4 207) rotate(-28) scale(.82)"/>
+    <use href="#tiny-flower" transform="translate(219 88) scale(.45)"/>
+    <use href="#tiny-flower" transform="translate(161 156) scale(.5)"/>
+  </svg>
+  <div class="hero-inner">
+    <svg class="crest" viewBox="0 0 90 98" fill="none" aria-hidden="true">
+      <path d="M45 7Q14 22 22 50Q28 73 45 82Q62 73 68 50Q76 22 45 7Z" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M45 17Q21 28 28 50Q33 66 45 73Q57 66 62 50Q69 28 45 17Z" stroke="currentColor" stroke-width=".7"/>
+      <path d="M45 25V62 M27 46Q45 25 63 46 M31 59Q44 40 59 59 M35 30Q45 39 55 30" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+      <path d="M45 4L49 10L45 15L41 10Z M24 24l-9-3m51 3 9-3M26 72l-7 7m45-7 7 7" stroke="currentColor" stroke-width="1.2"/>
+      <circle cx="45" cy="45" r="3" fill="currentColor"/>
+    </svg>
+    <p class="hero-quiet">With love and blessings from our families</p>
+    <p class="small-intro">You are joyfully invited to celebrate</p>
+    <h1 class="hero-names script" id="couple-names"><span class="name" id="brideName">Angel</span><span class="and">with</span><span class="name" id="groomName">Mukul</span></h1>
+    <p class="hero-subtitle">The beginning of our forever</p>
+    <div class="flower-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-2-4-8-5-8-11 0-3 3-4 5-2 2-5 8-5 9 0 4 0 4 6 0 8l-6 5z"/></svg></div>
+    <div class="hero-date"><span>Wednesday</span><b>✦</b><span>25 November 2026</span><b>✦</b><span>Engagement</span></div>
+    <a class="hero-scroll" href="#save-the-date">Scroll to explore <svg viewBox="0 0 20 20"><path d="M10 2v15m-6-6 6 6 6-6"/></svg></a>
+  </div>
+  <!-- An original illustrated staircase garden inspired by the reference video's scenery -->
+  <svg class="garden" viewBox="0 0 1500 440" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="garden-bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c9d7ae" stop-opacity="0"/><stop offset="1" stop-color="#8fa37b" stop-opacity=".45"/></linearGradient>
+      <linearGradient id="steps" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9eed6"/><stop offset="1" stop-color="#a79e85"/></linearGradient>
+      <linearGradient id="hedge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#87a079"/><stop offset="1" stop-color="#4b7052"/></linearGradient>
+      <linearGradient id="rightstep" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fcf4da"/><stop offset="1" stop-color="#b4a691"/></linearGradient>
+      <g id="bush"><ellipse cx="0" cy="0" rx="90" ry="70" fill="url(#hedge)"/><circle cx="-40" cy="-16" r="36" fill="#a0b38a" opacity=".6"/><circle cx="34" cy="-20" r="47" fill="#64835d" opacity=".55"/></g>
+      <g id="tree"><path d="M0 0L9 -130L-5 -145L-11 0Z" fill="#567052"/><ellipse cx="0" cy="-165" rx="29" ry="118" fill="#547659"/><ellipse cx="-8" cy="-185" rx="12" ry="90" fill="#7e9672" opacity=".45"/></g>
+    </defs>
+    <path d="M0 220Q150 170 360 214T750 211T1100 202T1500 188V440H0Z" fill="url(#garden-bg)"/>
+    <use href="#tree" transform="translate(225 318) scale(.9)"/><use href="#tree" transform="translate(1297 320) scale(.97)"/>
+    <use href="#bush" transform="translate(375 325) scale(1.65 1.12)"/><use href="#bush" transform="translate(1099 325) scale(1.6 1.12)"/>
+    <use href="#bush" transform="translate(593 335) scale(1.2 .75)"/><use href="#bush" transform="translate(873 335) scale(1.25 .75)"/>
+    <use href="#bush" transform="translate(741 333) scale(1.28 1.04)"/>
+    <path d="M0 272L430 440H0Z" fill="url(#steps)" stroke="#9d967a" stroke-width="4"/>
+    <path d="M1500 272L1070 440H1500Z" fill="url(#rightstep)" stroke="#9d967a" stroke-width="4"/>
+    <g stroke="#aaa58d" stroke-width="2" opacity=".76">
+      <path d="M0 298L370 440 M0 328L308 440 M0 359L235 440 M0 393L145 440"/>
+      <path d="M1500 298L1130 440 M1500 328L1192 440 M1500 359L1265 440 M1500 393L1355 440"/>
+    </g>
+    <g fill="none" stroke="#f9f2d8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-20 236Q178 231 462 426 M1520 236Q1322 231 1038 426"/>
+      <path d="M-17 275Q160 273 402 440 M1517 275Q1340 273 1098 440" stroke-width="5"/>
+    </g>
+    <g stroke="#e9e2c7" stroke-width="5" stroke-linecap="round"><path d="M38 235v55 M99 242v68 M160 262v72 M221 296v57 M282 328v46 M343 364v43 M403 406v35 M1462 235v55 M1401 242v68 M1340 262v72 M1279 296v57 M1218 328v46 M1157 364v43 M1097 406v35"/></g>
+    <g fill="#efe8d0" stroke="#a7a48d" stroke-width="2"><circle cx="33" cy="238" r="12"/><circle cx="219" cy="296" r="11"/><circle cx="1467" cy="238" r="12"/><circle cx="1281" cy="296" r="11"/></g>
+    <g opacity=".95">
+      <use href="#flower-rose" transform="translate(99 427) scale(1.35)"/><use href="#flower-rose" transform="translate(250 427) scale(1.0)"/>
+      <use href="#flower-rose" transform="translate(1401 427) scale(1.35)"/><use href="#flower-rose" transform="translate(1250 427) scale(1)"/>
+      <use href="#flower-small" transform="translate(35 398) scale(1.1)"/><use href="#flower-small" transform="translate(335 437) scale(.9)"/>
+      <use href="#flower-small" transform="translate(1465 398) scale(1.1)"/><use href="#flower-small" transform="translate(1165 437) scale(.9)"/>
+      <use href="#tiny-flower" transform="translate(698 344) scale(.83)"/><use href="#tiny-flower" transform="translate(802 325) scale(.64)"/><use href="#tiny-flower" transform="translate(560 340) scale(.56)"/><use href="#tiny-flower" transform="translate(965 346) scale(.61)"/>
+      <use href="#tiny-flower" transform="translate(727 306) scale(.59)"/><use href="#tiny-flower" transform="translate(775 304) scale(.55)"/>
+    </g>
+    <path d="M430 440Q750 402 1070 440" fill="none" stroke="#688154" stroke-width="25" opacity=".52"/>
+  </svg>
+  <div class="mobile-stairs" aria-hidden="true"><span></span><span></span></div>
+</section>
+
+<main>
+  <section class="save-section" id="save-the-date">
+    <div class="container reveal">
+      <div class="eyebrow">Mark your calendars</div>
+      <h2 class="section-title">Save the Date</h2>
+      <div class="flower-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-2-4-8-5-8-11 0-3 3-4 5-2 2-5 8-5 9 0 4 0 4 6 0 8l-6 5z"/></svg></div>
+      <p class="section-copy">Some moments become memories for a lifetime.<br>We would love for you to be part of ours.</p>
+      <div class="gold-label">25th November 2026</div>
+      <div class="countdown" role="timer" aria-label="Countdown to the engagement celebration">
+        <div class="count-unit"><span class="count-number" id="days">--</span><span class="count-label">Days</span></div><span class="count-sep" aria-hidden="true">:</span>
+        <div class="count-unit"><span class="count-number" id="hours">--</span><span class="count-label">Hours</span></div><span class="count-sep" aria-hidden="true">:</span>
+        <div class="count-unit"><span class="count-number" id="minutes">--</span><span class="count-label">Minutes</span></div><span class="count-sep" aria-hidden="true">:</span>
+        <div class="count-unit"><span class="count-number" id="seconds">--</span><span class="count-label">Seconds</span></div>
+      </div>
+      <p class="muted-note" id="countdownNote">Counting down to our engagement celebration</p>
+      <button class="outline-button" type="button" id="saveCalendar" style="margin-top:15px"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18"/></svg> Add to calendar</button>
+    </div>
+  </section>
+
+  <section class="events-section" id="celebrations">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="eyebrow">A journey of togetherness</div>
+        <h2 class="section-title">Our Celebrations</h2>
+        <div class="flower-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-2-4-8-5-8-11 0-3 3-4 5-2 2-5 8-5 9 0 4 0 4 6 0 8l-6 5z"/></svg></div>
+        <p class="section-copy">Every celebration is a little more magical when shared with the people we love.</p>
+      </div>
+      <div class="events-grid">
+        <article class="event-card reveal">
+          <div class="event-image haldi">
+            <span class="sun"></span>
+            <svg class="event-art" viewBox="0 0 340 244" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <path d="M0 65Q85 4 170 59T340 58V-6H0Z" fill="#f5d67c" opacity=".75"/>
+              <path d="M0 0Q86 85 170 0T340 0" fill="none" stroke="#fff0b9" stroke-width="12"/>
+              <path d="M0 40Q170 107 340 40" fill="none" stroke="#db9e42" stroke-width="6"/>
+              <g fill="#e8b94e"><circle cx="25" cy="63" r="10"/><circle cx="54" cy="77" r="10"/><circle cx="88" cy="85" r="10"/><circle cx="120" cy="89" r="10"/><circle cx="155" cy="93" r="10"/><circle cx="193" cy="91" r="10"/><circle cx="226" cy="86" r="10"/><circle cx="264" cy="75" r="10"/><circle cx="300" cy="65" r="10"/></g>
+              <path d="M40 70V244M300 70V244" stroke="#fce7af" stroke-width="9"/><path d="M0 205Q100 180 165 208T340 199V244H0Z" fill="#705e35" opacity=".65"/>
+              <use href="#flower-rose" transform="translate(38 184) scale(.65)"/><use href="#flower-rose" transform="translate(302 190) scale(.8)"/><use href="#flower-small" transform="translate(62 209) scale(.86)"/><use href="#flower-small" transform="translate(282 211) scale(.86)"/>
+            </svg>
+            <span class="event-visual-name">Mehendi & Haldi</span>
+          </div>
+          <div class="event-content"><div class="event-kicker">A joyful beginning</div><h3>Mehendi & Haldi</h3><p>Colours, laughter, sunshine and love — a little magic before the big day.</p><span class="event-status">Date & venue to be confirmed</span></div>
+        </article>
+        <article class="event-card reveal">
+          <div class="event-image sangeet">
+            <span class="sun"></span>
+            <svg class="event-art" viewBox="0 0 340 244" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <path d="M0 0Q170 82 340 0" fill="none" stroke="#e2ad68" stroke-width="3"/>
+              <path d="M0 33Q170 118 340 33" fill="none" stroke="#e2ad68" stroke-width="2"/>
+              <g fill="#ffe3a3"><circle cx="20" cy="17" r="4"/><circle cx="75" cy="48" r="4"/><circle cx="134" cy="62" r="4"/><circle cx="208" cy="62" r="4"/><circle cx="275" cy="41" r="4"/><circle cx="322" cy="15" r="4"/><circle cx="24" cy="51" r="3"/><circle cx="80" cy="78" r="3"/><circle cx="160" cy="92" r="3"/><circle cx="270" cy="71" r="3"/></g>
+              <path d="M15 244V134Q15 28 170 28Q325 28 325 134V244" fill="none" stroke="#c08e68" stroke-width="12" opacity=".74"/>
+              <path d="M39 244V132Q39 54 170 54Q301 54 301 132V244" fill="none" stroke="#ffd4a0" stroke-width="1.4" opacity=".55"/>
+              <path d="M0 208Q85 191 171 211T340 208V244H0Z" fill="#191524" opacity=".6"/>
+              <use href="#flower-rose" transform="translate(28 208) scale(.76)"/><use href="#flower-rose" transform="translate(309 205) scale(.7)"/>
+            </svg>
+            <span class="event-visual-name">Sangeet</span>
+          </div>
+          <div class="event-content"><div class="event-kicker">An evening of music</div><h3>Sangeet Night</h3><p>Under the stars, we will dance, laugh and make memories together.</p><span class="event-status">Date & venue to be confirmed</span></div>
+        </article>
+        <article class="event-card reveal">
+          <div class="event-image wedding">
+            <span class="sun"></span>
+            <svg class="event-art" viewBox="0 0 340 244" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <path d="M26 226V110Q26 35 170 30Q314 35 314 110V226" fill="none" stroke="#f7dbac" stroke-width="13" opacity=".78"/>
+              <path d="M47 225V113Q47 54 170 54Q293 54 293 113V225" fill="none" stroke="#dbaa73" stroke-width="2"/>
+              <path d="M50 103Q170 166 290 103" stroke="#e3b97c" stroke-width="12" fill="none"/>
+              <path d="M52 104Q170 152 288 104" stroke="#fae2aa" stroke-width="3" fill="none"/>
+              <g fill="#e6c078"><circle cx="50" cy="103" r="7"/><circle cx="90" cy="119" r="7"/><circle cx="130" cy="130" r="7"/><circle cx="170" cy="134" r="7"/><circle cx="210" cy="130" r="7"/><circle cx="250" cy="119" r="7"/><circle cx="290" cy="103" r="7"/></g>
+              <path d="M0 220Q170 190 340 220V244H0Z" fill="#4d2538" opacity=".7"/>
+              <use href="#flower-rose" transform="translate(23 202) scale(.85)"/><use href="#flower-rose" transform="translate(317 201) scale(.85)"/><use href="#flower-small" transform="translate(53 226) scale(.75)"/><use href="#flower-small" transform="translate(284 226) scale(.75)"/>
+            </svg>
+            <span class="event-visual-name">The Wedding</span>
+          </div>
+          <div class="event-content"><div class="event-kicker">Our forever</div><h3>The Wedding Day</h3><p>A beautiful new chapter, surrounded by the warmth of loved ones.</p><span class="event-status">Date & venue to be confirmed</span></div>
+        </article>
+      </div>
+      <p class="muted-note" style="text-align:center;color:#e1c6c3;margin-top:33px">The engagement details below are confirmed; wedding ceremony details are draft placeholders.</p>
+    </div>
+  </section>
+
+  <section class="family-section" id="families">
+    <div class="container reveal">
+      <div class="eyebrow" style="color:#aa844f">With gratitude and love</div>
+      <h2 class="section-title" style="color:var(--wine)">Our Families</h2>
+      <div class="flower-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-2-4-8-5-8-11 0-3 3-4 5-2 2-5 8-5 9 0 4 0 4 6 0 8l-6 5z"/></svg></div>
+      <p class="section-copy">With the blessings of our families, we begin this beautiful journey together.</p>
+      <div class="family-grid">
+        <div class="family-panel"><span class="eyebrow">The bride-to-be</span><h3>Angel</h3><p>Beloved daughter of<br><strong>Smt. Suman Kaushal</strong><br>and <strong>Sh. Rajnish Kaushal</strong></p></div>
+        <div class="family-heart" aria-hidden="true">&</div>
+        <div class="family-panel"><span class="eyebrow">The groom-to-be</span><h3>Mukul</h3><p>Beloved son of<br><strong>Smt. Sunita Verma</strong><br>and <strong>Sh. Jagdish Kumar Verma</strong></p></div>
+      </div>
+      <p class="family-quote">“We cannot wait to celebrate this new beginning with the people who mean the most to us.”</p>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="gallery">
+    <div class="container reveal">
+      <div class="eyebrow" style="color:#aa844f">Little moments, lasting memories</div>
+      <h2 class="section-title">Our Gallery</h2>
+      <p class="section-copy">A place for our favourite memories together.</p>
+      <div class="gallery-grid" aria-label="Three placeholders for the couple's photographs">
+        <div class="gallery-tile"><div class="gallery-shape"></div><svg class="gallery-icon" viewBox="0 0 24 24"><path d="M3 7h5l2-3h4l2 3h5v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>Our story</span></div>
+        <div class="gallery-tile tall"><div class="gallery-shape"></div><svg class="gallery-icon" viewBox="0 0 24 24"><path d="M3 7h5l2-3h4l2 3h5v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>Beautiful moments</span></div>
+        <div class="gallery-tile"><div class="gallery-shape"></div><svg class="gallery-icon" viewBox="0 0 24 24"><path d="M3 7h5l2-3h4l2 3h5v13H3z"/><circle cx="12" cy="13" r="4"/></svg><span>Forever together</span></div>
+      </div>
+      <p class="gallery-footnote">Photo placeholders — real photographs can be added before publishing.</p>
+    </div>
+  </section>
+
+  <section class="venue-section" id="venue">
+    <div class="container reveal">
+      <div class="eyebrow" style="color:#ad8755">We can't wait to see you</div>
+      <h2 class="section-title">Where We Celebrate</h2>
+      <div class="flower-divider" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-2-4-8-5-8-11 0-3 3-4 5-2 2-5 8-5 9 0 4 0 4 6 0 8l-6 5z"/></svg></div>
+      <div class="eyebrow" style="color:#c09c68;margin-top:27px">Engagement · 25 November 2026</div>
+      <h3 class="venue-name">Hotel Clarion Inn AMPS</h3>
+      <p class="venue-address">Arjan Complex, Main Sirhind Road<br>Patiala, Punjab</p>
+      <div class="map-frame"><iframe title="Map showing the engagement venue in Patiala" src="https://www.google.com/maps?q=Hotel%20Clarion%20Inn%20AMPS%2C%20Arjan%20Complex%2C%20Main%20Sirhind%20Road%2C%20Patiala&output=embed" referrerpolicy="no-referrer-when-downgrade" loading="lazy" allowfullscreen></iframe></div>
+      <div class="button-row"><a class="solid-button" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/search/?api=1&query=Hotel%20Clarion%20Inn%20AMPS%2C%20Arjan%20Complex%2C%20Main%20Sirhind%20Road%2C%20Patiala"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg> Get directions</a><button class="outline-button" type="button" id="shareInvite"><svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m9 11 6-4M9 13l6 4"/></svg> Share invitation</button></div>
+    </div>
+  </section>
+</main>
+
+<section class="outro">
+  <div class="container reveal">
+    <div class="eyebrow">With love, warmth & blessings</div>
+    <h2 class="section-title">Your Presence Is Our Joy</h2>
+    <p>Our happiest moments are made more meaningful by the people who share them. It would mean the world to celebrate with you.</p>
+    <div class="final-names">Angel & Mukul</div>
+  </div>
+  <footer class="footer">Made with love for <span>Angel & Mukul</span> <span aria-hidden="true">✦</span> 2026</footer>
+</section>
+<div class="toast" role="status" aria-live="polite" id="toast"></div>
+<script>
+  // Edit these values when the actual wedding details are finalized.
+  const INVITE = {
+    couple: 'Angel & Mukul',
+    occasion: 'Engagement Celebration',
+    date: '2026-11-25', // Confirmed engagement date; no start time has been supplied.
+    venue: 'Hotel Clarion Inn AMPS, Arjan Complex, Main Sirhind Road, Patiala, Punjab'
+  };
+
+  const $ = id => document.getElementById(id);
+  const targetDate = new Date('2026-11-25T00:00:00+05:30');
+  function countdown() {
+    const remaining = Math.max(0, targetDate.getTime() - Date.now());
+    const secondsTotal = Math.floor(remaining / 1000);
+    const values = {
+      days: Math.floor(secondsTotal / 86400),
+      hours: Math.floor((secondsTotal % 86400) / 3600),
+      minutes: Math.floor((secondsTotal % 3600) / 60),
+      seconds: secondsTotal % 60
+    };
+    Object.entries(values).forEach(([k,v]) => { $(k).textContent = String(v).padStart(2, '0'); });
+    if (remaining === 0) $('countdownNote').textContent = 'The celebration date has arrived ✦';
+  }
+  countdown();
+  const interval = setInterval(() => { countdown(); if (Date.now() >= targetDate.getTime()) clearInterval(interval); }, 1000);
+
+  // Reduced-motion visitors won't see petals or scroll-reveal animations.
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reducedMotion) {
+    const petals = $('petals');
+    for (let i = 0; i < 19; i++) {
+      const p = document.createElement('span');
+      p.className = 'petal';
+      p.style.left = `${(i * 57 + 13) % 100}%`;
+      p.style.setProperty('--duration', `${11 + (i * 7 % 10)}s`);
+      p.style.setProperty('--delay', `${-((i * 3) % 21)}s`);
+      p.style.setProperty('--drift', `${(i % 2 ? 1 : -1) * (50 + i * 6)}px`);
+      p.style.setProperty('--spin', `${370 + i * 45}deg`);
+      p.style.width = `${6 + i % 6}px`;
+      p.style.height = `${10 + i % 7}px`;
+      petals.appendChild(p);
+    }
+  }
+  const revealEls = document.querySelectorAll('.reveal');
+  if (reducedMotion || !('IntersectionObserver' in window)) revealEls.forEach(e => e.classList.add('visible'));
+  else {
+    const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, {threshold:.1});
+    revealEls.forEach(el => observer.observe(el));
+  }
+
+  let toastTimeout;
+  function toast(message) { const el = $('toast'); el.textContent = message; el.classList.add('show'); clearTimeout(toastTimeout); toastTimeout = setTimeout(() => el.classList.remove('show'), 3100); }
+  function escapeICS(str) { return String(str).replace(/\\/g,'\\\\').replace(/\n/g,'\\n').replace(/,/g,'\\,').replace(/;/g,'\\;'); }
+  $('saveCalendar').addEventListener('click', () => {
+    // All-day event because the exact ceremony time is not confirmed.
+    const ics = [
+      'BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//EN','CALSCALE:GREGORIAN','BEGIN:VEVENT',
+      'UID:angel-mukul-engagement-20261125@invitation.local',
+      'DTSTAMP:20261102T000000Z',
+      'DTSTART;VALUE=DATE:20261125','DTEND;VALUE=DATE:20261126',
+      `SUMMARY:${escapeICS(INVITE.couple + ' — ' + INVITE.occasion)}`,
+      `LOCATION:${escapeICS(INVITE.venue)}`,
+      'DESCRIPTION:We would love for you to celebrate with us. Exact time to be shared by our families.',
+      'END:VEVENT','END:VCALENDAR'
+    ].join('\r\n');
+    const url = URL.createObjectURL(new Blob([ics], {type:'text/calendar;charset=utf-8'}));
+    const a = document.createElement('a'); a.href = url; a.download = 'Angel-Mukul-Engagement.ics'; document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    toast('Calendar invitation downloaded');
+  });
+  $('shareInvite').addEventListener('click', async () => {
+    const content = {title:'Angel & Mukul — Invitation',text:'You are warmly invited to celebrate with Angel & Mukul on 25 November 2026.',url:location.href};
+    if (navigator.share) {try { await navigator.share(content); } catch(e) { if (e.name !== 'AbortError') toast('Sharing is unavailable here'); } return;}
+    try { await navigator.clipboard.writeText(location.href); toast('Invitation link copied'); }
+    catch { toast('Once published, copy the site URL to share it'); }
+  });
+</script>
+</body>
+</html>
